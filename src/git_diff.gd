@@ -1,7 +1,7 @@
 ## line-based diff helpers shared by git and the editor.
 ## keeps local hunks in `GitUtil.Keys` shape.
 
-const GitUtil = preload("res://addons/addon_lib/git_service/src/git_util.gd")
+const GitUtil = preload("res://addons/_lib/git_service/src/git_util.gd")
 
 const CONTEXT = 3
 

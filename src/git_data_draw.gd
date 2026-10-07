@@ -7,7 +7,7 @@ const NUItemList = preload("uid://cjls86v1v4242") #! resolve ALibRuntime.NodeUti
 const TreeHelperBase = preload("uid://bm6fl2iu4jew7") #! resolve ALibRuntime.TreeHelperBase
 const FAVORITES_META = "FAVORITES" #! resolve FileSystemSingleton.FileData.FAVORITES_META
 
-const GitUtil = preload("res://addons/addon_lib/git_service/src/git_util.gd")
+const GitUtil = preload("res://addons/_lib/git_service/src/git_util.gd")
 
 
 class GitItemHelper:

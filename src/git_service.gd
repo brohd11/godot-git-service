@@ -1,13 +1,13 @@
 ## shared background git data provider for editor consumers.
 ## keeps repo status cached and refreshes one repo at a time.
 class_name GitService
-extends "res://addons/addon_lib/singleton/singleton_ref_count.gd" #! ext Singletons.RefCount
+extends "res://addons/_lib/singleton/singleton_ref_count.gd" #! ext Singletons.RefCount
 
 
 
 #region SingletonAPI
 
-const PE_STRIP_CAST_SCRIPT = preload("res://addons/addon_lib/git_service/src/git_service.gd")
+const PE_STRIP_CAST_SCRIPT = preload("res://addons/_lib/git_service/src/git_service.gd")
 
 static func get_singleton_name() -> String:
 	return "GitService"
@@ -38,12 +38,12 @@ func _get_ready_bool() -> bool:
 
 #endregion
 
-const SHEditor = preload("uid://c4l4v4eufkmtx") #! resolve ALibEditor.Settings.SettingHelperEditor
+const SHEditor = preload("uid://dnov6vp7pjnbb") #! resolve SettingHelper.Editor
 
-const GitUtil = preload("res://addons/addon_lib/git_service/src/git_util.gd")
-const GitDiff = preload("res://addons/addon_lib/git_service/src/git_diff.gd")
-const GlyphIcons = preload("res://addons/addon_lib/git_service/src/glyph_icons.gd")
-const GitDataDraw = preload("res://addons/addon_lib/git_service/src/git_data_draw.gd")
+const GitUtil = preload("res://addons/_lib/git_service/src/git_util.gd")
+const GitDiff = preload("res://addons/_lib/git_service/src/git_diff.gd")
+const GlyphIcons = preload("res://addons/_lib/git_service/src/glyph_icons.gd")
+const GitDataDraw = preload("res://addons/_lib/git_service/src/git_data_draw.gd")
 
 const MAIN_REPO = "res://"
 const REFRESH_DEBOUNCE = 1.0

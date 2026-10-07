@@ -1,7 +1,7 @@
-export_root: "res://addons/addon_lib/git_service/_export_ignore/exports"
-plugin_folder: "GitService{{version=res://addons/addon_lib/git_service}}"
-pre_script: "res://addons/addon_lib/git_service/_export_ignore/pre_post_export.gd"
-post_script: "res://addons/addon_lib/git_service/_export_ignore/pre_post_export.gd"
+export_root: "res://addons/_lib/git_service/_export_ignore/exports"
+plugin_folder: "GitService{{version=res://addons/_lib/git_service}}"
+pre_script: "res://addons/_lib/git_service/_export_ignore/pre_post_export.gd"
+post_script: "res://addons/_lib/git_service/_export_ignore/pre_post_export.gd"
 build_require:
   - "brohd11/godot-addon-lib@v2.1.5"
   - "brohd11/godot-singleton@v0.9.0"
@@ -37,12 +37,12 @@ options:
     parse_tres: {}
 exports:
   -
-    source: "res://addons/addon_lib/git_service"
-    export_name: "git-service{{version=res://addons/addon_lib/git_service}}"
-    export_folder: addons/addon_lib/git_service
+    source: "res://addons/_lib/git_service"
+    export_name: "git-service{{version=res://addons/_lib/git_service}}"
+    export_folder: addons/_lib/git_service
     exclude:
       directories:
-        - "res://addons/addon_lib/git_service/_export_ignore"
+        - "res://addons/_lib/git_service/_export_ignore"
       file_extensions: []
       files: []
     other_transfers: []
@@ -51,4 +51,4 @@ exports:
       parse_gd: {}
       parse_tscn: {}
       parse_tres: {}
-    remote_dir: "res://addons/addon_lib/git_service/src/remote"
+    remote_dir: "res://addons/_lib/git_service/src/remote"
