@@ -3,8 +3,8 @@ extends RefCounted
 ## shared status drawing helpers for Tree and ItemList.
 
 const UTree = preload("uid://1gwputufojp6") #! resolve UtilR.Nodes.Trees.UTree
-const NUItemList = preload("uid://cjls86v1v4242") #! resolve ALibRuntime.NodeUtils.NUItemList
-const TreeHelperBase = preload("uid://bm6fl2iu4jew7") #! resolve ALibRuntime.TreeHelperBase
+const UItemList = preload("uid://bmkydws861tcb") #! resolve UtilR.Nodes.ItemLists.UItemList
+const TreeHelperBase = preload("uid://bma4204fvtvtx") #! resolve UtilR.Nodes.Trees.FileTreeHelperBase
 const FAVORITES_META = "FAVORITES" #! resolve FileSystemSingleton.FileData.FAVORITES_META
 
 const GitUtil = preload("res://addons/_lib/git_service/src/git_util.gd")
@@ -45,7 +45,7 @@ class GitItemHelper:
 			if icon == null:
 				continue
 			
-			if NUItemList.item_text_overflows(_item_list, i, icon):
+			if UItemList.item_text_overflows(_item_list, i, icon):
 				var sq_sz = item_rect.size.y * 0.25
 				var trip_x = item_rect.position.x + item_rect.size.x + (icon.get_width() / 2.0) - margin
 				var trip_y = item_rect.position.y + item_rect.size.y * 0.25

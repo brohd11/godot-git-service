@@ -1,6 +1,6 @@
 ## static helpers for git discovery, status, history, and patches.
 
-const UFile = preload("uid://bl33psa06nv1e") #! resolve ALibRuntime.Utils.UFile.Methods
+const UFile = preload("uid://bqfy5cvhth0m1") #! resolve UtilR.Files.UFile
 
 const GitColors = GitService.GitColors
 

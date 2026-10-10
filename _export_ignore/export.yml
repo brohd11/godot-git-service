@@ -3,9 +3,9 @@ plugin_folder: "GitService{{version=res://addons/_lib/git_service}}"
 pre_script: "res://addons/_lib/git_service/_export_ignore/pre_post_export.gd"
 post_script: "res://addons/_lib/git_service/_export_ignore/pre_post_export.gd"
 build_require:
-  - "brohd11/godot-addon-lib@v2.1.5"
   - "brohd11/godot-singleton@v0.9.0"
   - "brohd11/godot-util-r@v0.2.0"
+  - "brohd11/godot-setting-helper@v0.1.0"
 compile_require: []
 options:
   overwrite: true
