@@ -2,16 +2,13 @@ export_root: "res://addons/_lib/git_service/_export_ignore/exports"
 plugin_folder: "GitService{{version=res://addons/_lib/git_service}}"
 pre_script: ""
 post_script: ""
-build_require:
-  - "brohd11/godot-singleton@v0.9.0"
-  - "brohd11/godot-util-r@v0.2.0"
-  - "brohd11/godot-setting-helper@v0.1.0"
+build_require: @require
 compile_require: []
 options:
   overwrite: true
   include_uid: true
   include_import: true
-  ignore_src: true
+  ignore_src: false
   use_tag_in_cfg: true
   exported_deps: []
   include_min_version: true
@@ -20,7 +17,6 @@ options:
   include_project_license: false
   parser_settings:
     use_relative_paths: false
-    backport_target: 100
     parse_cs:
       namespace_rename: {}
     parse_gd:
